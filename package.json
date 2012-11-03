@@ -1,0 +1,10 @@
+{
+  "name": "flatmap2013",
+  "version": "0.0.0",
+  "devDependencies": {
+    "grunt-contrib-less": "",
+    "grunt-jekyll": "",
+    "lispyscript": "",
+    "amd-loader": ""
+  }
+}

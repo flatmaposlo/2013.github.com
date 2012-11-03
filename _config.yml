@@ -1,0 +1,9 @@
+safe: true
+lsi: false
+pygments: true
+exclude:
+  - node_modules
+  - README.md
+  - package.json
+  - grunt.js
+  - hooks
