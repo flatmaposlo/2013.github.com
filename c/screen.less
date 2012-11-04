@@ -89,5 +89,21 @@ div.container {
 
     img {
         box-shadow: 0px 4px 8px #aaa;
+        -webkit-filter: sepia(50%);
+        -moz-filter: sepia(50%);
+        -ms-filter: sepia(50%);
+        -o-filter: sepia(50%);
+        filter: sepia(50%);
+        border-radius: 3pt;
+    }
+
+    &:hover {
+        img {
+            -webkit-filter: sepia(0);
+            -moz-filter: sepia(0);
+            -ms-filter: sepia(0);
+            -o-filter: sepia(0);
+            filter: sepia(0);
+        }
     }
 }
