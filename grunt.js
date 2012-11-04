@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       },
       jekyll: {
         files: ["*.html", "_layouts/*.html", "_posts/*", "_includes/*",
-                "_config.yml"],
+                "_config.yml", "j/*.js", "c/*.css", "m/*"],
         tasks: ["jekyll:compile"]
       }
     },

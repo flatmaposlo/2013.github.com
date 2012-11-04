@@ -1,6 +1,93 @@
-@import "bootstrap/bootstrap.less";
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans+Mono:400");
+@import url("http://fonts.googleapis.com/css?family=Carrois+Gothic:400");
+@import url("http://fonts.googleapis.com/css?family=Merriweather:400,700");
+
+@import "bootstrap.less";
 
 body {
     #gradient .vertical-three-colors(#ddd, #fff, 50%, #fff);
     background-attachment: fixed;
+    margin: 0;
+}
+
+#header {
+    width: 100%;
+    #gradient .vertical(#222, #444);
+    color: white;
+    margin: 0;
+    text-align: center;
+    box-shadow: 0px 4px 8px #aaa;
+
+    font-family: "Carrois Gothic", sans-serif;
+
+    .logo {
+        color: #ad1416;
+    }
+
+    .func {
+        color: #FFFFFF;
+    }
+
+    .paren {
+        color: #EFC090;
+    }
+
+    .var {
+        color: #BFA4A4;
+    }
+
+    .op {
+        color: #D8D8D8;
+    }
+
+    .num {
+        color: #7FB347;
+    }
+
+    h1 {
+        font-family: "Droid Sans Mono", monospace;
+        margin: 0;
+        padding: 0.6em 0;
+        font-size: 64pt;
+    }
+
+    p {
+        padding-bottom: 20pt;
+        font-size: 24pt;
+        margin: 0;
+    }
+
+    div.container {
+        background: black;
+    }
+}
+
+div.container {
+    padding: 0.5em 3em;
+}
+
+#body {
+    background: white;
+    box-shadow: 0px 16px 32px #ddd;
+    padding-top: 2em;
+}
+
+.hero-unit {
+    .button-group {
+        text-align: center;
+    }
+
+    p {
+        margin-top: 1em;
+    }
+}
+
+.thumbnail {
+    text-align: center;
+    #gradient .vertical-three-colors(#e4e4e4, #f4f4f4, 25%, #f9f9f9);
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+
+    img {
+        box-shadow: 0px 4px 8px #aaa;
+    }
 }
