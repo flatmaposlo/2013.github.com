@@ -4,6 +4,14 @@
 
 @import "bootstrap.less";
 
+.transition(@rule) {
+    -webkit-transition: @rule;
+    -moz-transition: @rule;
+    -ms-transition: @rule;
+    -o-transition: @rule;
+    transition: @rule;
+}
+
 body {
     #gradient .vertical-three-colors(#ddd, #fff, 50%, #fff);
     background-attachment: fixed;
@@ -66,6 +74,42 @@ div.container {
     padding: 0.5em 3em;
 }
 
+ul.nav {
+    margin: -2em -3em 1em -3em;
+    padding: 0;
+    text-align: center;
+    #gradient .vertical-three-colors(#333, #444, 90%, #222);
+
+    li {
+        display: inline;
+        font-weight: bold;
+        padding: 0.3em;
+
+        &.active {
+            background: rgba(255, 255, 255, 0.3);
+
+            a {
+                color: #ddd;
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+
+        a {
+            color: #bbb;
+            padding: 0.1em 1em;
+            background: rgba(0,0,0,0);
+            .transition(background 0.2s ease);
+
+            &:hover {
+                text-decoration: none;
+                background: rgba(0,0,0,0.3);
+            }
+        }
+    }
+}
+
 #body {
     background: white;
     box-shadow: 0px 16px 32px #ddd;
@@ -105,5 +149,34 @@ div.container {
             -o-filter: sepia(0);
             filter: sepia(0);
         }
+    }
+}
+
+div.page-header {
+    margin-top: 3em;
+}
+
+p {
+    font-size: @fontSizeLarge;
+}
+
+img.right {
+    float: right;
+    margin: 0 0 1em 1em;
+    box-shadow: -2px 4px 4px rgba(0,0,0,0.2);
+}
+
+div.news-post {
+    h2 {
+        a {
+            color: black;
+        }
+        border-bottom: 1px solid #ddd;
+    }
+
+    p.date {
+        color: #999;
+        font-size: 1em;
+        padding-left: 2em;
     }
 }

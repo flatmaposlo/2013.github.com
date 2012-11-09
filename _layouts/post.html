@@ -1,0 +1,17 @@
+{% include header.html %}
+<div class="container" id="body">
+  {% include nav.html %}
+  <div class="news-post page-header">
+    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <p class="date" title="{{ page.date | date_to_xmlschema }}">
+      <span class="day">{{ page.date | date: '%d' }}</span>
+      <span class="month">
+        <abbr>{{ page.date | date: '%b' }}</abbr>
+      </span>
+      <span class="year">{{ page.date | date: '%Y' }}</span>
+    </p>
+    {{ content }}
+  </div>
+  {% include sponsors.html %}
+</div>
+{% include footer.html %}
