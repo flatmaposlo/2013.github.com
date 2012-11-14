@@ -14,6 +14,15 @@ If `npm install -g` requires root access, install Grunt manually:
 $ sudo npm install -g grunt
 ```
 
+Jekyll
+
+
+```bash
+$ gem install jekyll
+```
+
+
+
 Setup
 -----
 
