@@ -1,0 +1,23 @@
+---
+layout: default
+title: flatMap(Oslo) Eivind Waaler
+---
+<div class="page-header">
+  <h1>Eivind Waaler</h1>
+</div>
+
+<div class="clearfix">
+  <img src="/m/speakers/waaler.jpg" class="right" alt=""/>
+  <p>
+    Eivind has a passion for programming languages, functional programming and elegant solutions to computer-challenges. He has almost 15 years of experience with Java projects, but discovered Scala when writing a master-thesis on implementing efficient DSLs on the JVM some years ago. Eivind is currently leading the Java department in BEKK which also includes a dedicated "Scala &amp; JVM" group. The last 2 years he has been working on projects using Java grid products as Hazelcast and GemFire.
+  </p>
+</div>
+<div class="page-header">
+  <h1>From Grid to Akka! <small>Session</small></h1>
+</div>
+<p>
+  During the last year we have put quite a lot of effort into creating our own simple grid-based processing engine. We define a custom process which will load and process data on a distributed data-grid. Doing parallel/asynchronous operations is done using a combination of distributed tasks and node-local data. I have, however, seen a need for more flexibility in the way processes are defined with regards to asynchronous steps and maximizing throughput and utilization of available processing resources. With this in mind I have ported a version of our processing engine to use Akka and asynchronous messages to achieve benefits in terms of scalability, error handling and a more flexible resource-utilization.
+</p>
+<p>
+  The goal of this presentation is to show the differences in working with a grid-product (Hazelcast) compared to that of Akka and actors. I will through examples explain how our system is implemented in Hazelcast, and how it can be improved using Akka. Examples will be given in both Java and Scala.
+</p>
