@@ -4,7 +4,7 @@
   "devDependencies": {
     "grunt-contrib-less": "",
     "grunt-jekyll": "",
-    "lispyscript": "",
-    "amd-loader": ""
+    "grunt-contrib-connect": "",
+    "grunt-contrib-watch": ""
   }
 }

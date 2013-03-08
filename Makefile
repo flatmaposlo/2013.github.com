@@ -7,4 +7,4 @@ all:
 	grunt default
 
 server: all
-	grunt server watch
+	grunt connect watch
