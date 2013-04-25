@@ -177,3 +177,57 @@ a.more-speakers {
     color: #444;
     font-size: 1.4em;
 }
+
+table.schedule {
+    width: 100%;
+
+    th {
+        white-space: nowrap;
+    }
+
+    th, td {
+        height: 100%;
+        vertical-align: top;
+    }
+
+    td {
+        background-color: #ddd;
+        padding: 0.25em 0.5em;
+
+        &.keynote {
+            background-color: #cce;
+        }
+
+        &.interlude {
+            background-color: #cec;
+        }
+
+        &.workshop {
+            background-color: #ecc;
+
+            &:before {
+                content: "Workshop";
+                line-height: 2em;
+                color: #655;
+                font-weight: bold;
+            }
+        }
+    }
+
+    a {
+        display: block;
+        color: black;
+    }
+
+    h3 {
+        margin: 0;
+        line-height: 2em;
+        font-size: inherit;
+        text-align: center;
+        color: #556;
+    }
+
+    .speaker {
+        font-weight: bold;
+    }
+}
