@@ -25,8 +25,30 @@ Scala 2.10 arrived in January, bringing with it some every day conveniences like
 </div>
 
 <p>
-Macros provide a way for your code to participate in the compilation project. The have garnered a huge amount of interest; many see them as our saviour from boilerplate, others fear them as a fast track to unmaintainable code.
+  We'll examine macros in detail: when are they appropriate, how they
+  are invoked by the compiler, and how you can implement them. This
+  journey will take us from the standard Scala 2.10 release (which
+  includes, experimentally, def-macros), through to the fabled "Macro
+  Paradise," where R&D is underway to provide Type Macros and more.
 </p>
+
 <p>
-  We'll examine macros in detail: when are they appropriate, how they are invoked by the compiler, and how you can implement them. This journey will take us from the standard Scala 2.10 release (which includes, experimentally, def-macros), through to the fabled "Macro Paradise", where R&amp;D is underway to provide Type Macros and more.
+  Concretely, we will:
 </p>
+
+<ul>
+  <li>Learn how to reflect on types</li>
+  <li>Use the REPL to experiment with compiler internals</li>
+  <li>Build a macro, step-by-step, to transform a block of code</li>
+  <li>Use reify, manual tree creation, and the new quasiquotes to construct and pattern match against trees.</li>
+  <li>Learn what it means to be sym-ful</li>
+  <li>Understand how to write (or use pre-written) tree Traversers and Transformers.</li>
+</ul>
+
+<p>Prerequisites:</p>
+
+<ul>
+  <li>Basic knowledge of git (or be sitting next to someone with said knowledge)</li>
+  <li>You've at least browsed through http://docs.scala-lang.org/overviews/reflection/overview.html and the "Def Macros" section http://docs.scala-lang.org/overviews/macros/overview.html</li>
+  <li>SBT 0.12.3 installed (http://scala-sbt.org)</li>
+</ul>
